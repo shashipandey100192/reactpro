@@ -1,0 +1,300 @@
+javacript
+-------------------------------
+1) js: compilar v8
+2) js: cammal case
+	We are learning javascript.
+	weAreLearningJavascript
+3) js: use case sansative language
+4) js: if is language
+	1) return
+	2) object
+	2) property
+	3) mathods
+	4) datatype
+	5) function
+	6) operators
+	7) events
+	8) error
+	9) variable
+	10) keyword
+	11) arg, param
+-----------------------------------------------------
+5) this  : select current object/ self object
+6) .	 : access methods and property of object / go to inside
+7) new   : virtual object create 
+8) types of error
+	1) logical
+		a) datatype
+		b) operators 
+	2) syntex 
+9) types of object
+	1) real object  ( all html element)
+	2) virtual object ( using new keyword)
+10) types of event
+	1) mouse	
+	2) keybord
+	3) window
+11) variable define
+	var
+	let
+	const
+	types of variable
+	1) local variable ( local scope / script scope)
+	2) global variable ( global scope)
+12) js global function
+	1) String()
+	2) Date()
+	3) Number()
+	4) Array()
+	5) Object()
+	6) Math     //global object
+	7) Promise()
+13) required and return 
+14) types of function
+	1) pre-define ( in-built)
+	2) user-define ( custom)
+Note: function name and variable name
+	1) can't use js keyword
+	2) can't start from number
+	3) can't use special charectors
+	4) can't use non-printing charector (space)
+15) () [] {}
+16) BOM vs DOM 
+17) HTML VS DHTML
+-------------------------------------------------------------------
+18) js link
+	1) inline
+	2) internal
+	3) external
+19) on : prefix 
+20) output display
+	1) alert()
+	2) console.log()
+	3) document.write()
+	4) innerHTML / innerText
+21) dom
+	1) dom document
+	2) dom element
+		1) getElementById()
+		2) getElementsByTagName()
+		3) getElementsByClassName()
+		4) querySelector()
+		5) querySelectorAll()
+	3) dom style
+	4) dom event
+	5) dom attribute
+----------------------------------------------------------------
+22) dom attribute
+	1) setAttribute()
+	2) getAttribute()
+	3) removeAttribute()
+23) function as for event
+	setInterval()
+	clearInterval()
+	setTimeout()
+	clearTimeout()
+----------------------------------------------------------------
+24) get and set 
+25) dyn element
+	1) createElement()
+	2) appendChild()
+26) dyn class
+	1) single class
+		className=""
+	2) multi class
+		classList.add()
+		classList.remove()
+27) dyn event (dom event)
+	addEventListener()
+28) conditional statment
+	if()
+	if() else
+	if() else if()
+
+29) dom style 
+------------------------------------------------
+30) user input 
+	prompt()
+31) data convertor function
+	1) eval()
+	2) parseInt()
+	3) parseFloat()
+32) array
+	methods
+	---------------------
+	push()
+	pop()
+	shift()
+	unshift()
+	indexOf()
+	lastIndexOf()
+	sort()
+	reverse()
+	map()
+33) multi line string `` 
+34) template litral `${}`
+35) data binding/ data maping
+-----------------------------------------------------
+36) screen (object)
+	availHeight
+	availLeft
+		...
+37) scroll
+38) Date()
+	1) local date
+		getHours()
+		getMinutes()
+		getSeconds()
+		getMiliSeconds()
+		getDay()
+		getMonth()
+		getYear()
+		getFullYear()
+		getTime()
+	2) server(UTC)
+-------------------------------------------
+39) storage
+	1) local (you have to remove)
+		setItem()
+		getItem()
+		clear()
+		removeItem()
+		key
+	2) sesstion (auto remove whine close)
+		setItem()
+		getItem()
+		clear()
+		removeItem()
+		key
+	JSON.stringify()     // object/json  to string
+	JSON.parse()	     // string  to json
+----------------------------------------------------------
+40) program example
+	get and set
+	if condition
+	create object
+	array: push, join,map
+	localStorage: setItem / getItem
+ 	lazy function calling
+
+----------------------------------------------------------
+41) math 
+42) create captch 
+43) generate otp 
+---------------------------------------
+44) "use strict"
+45) switch
+47) closer function( inner function , outer function, nested function)
+-----------------------------------------------------------------------=
+48) element selectors 
+49) filter 
+--------------------------------------------
+50) Object
+	1) constructor pattern/ pattern constructor function constructor( old)
+class
+prototype
+constructor()
+-------------------------------------------------------------------
+react
+============
+1) install
+	1) node.js
+	2) git bash
+	3) git account 
+2) what is node.js?
+3) what is npm ?
+4) node_modules
+5) what is package ?
+6) what is package.json ?
+7) what is package.lock.json ?
+8) about npx ?   ( create application)
+9) GUI vs CLI
+10) code .  (open in vscode)
+11) terminal: operate application panal
+12) commands list
+	npm star // start application / server
+	ctrl+c	// close/ stop application / server
+13) default port no : 3000
+---------------------------------------------------
+git(version control)
+https://github.com/shashipandey100192/reactpro
+=============================
+	1) git login
+	2) create repo
+Note: project name and repo name must have same 
+	3) git remote -v   	// check connection
+	4) git init 		// initialized 
+	5) git remote add origin "repopath"	//create /add connection
+	6) git add --all	// add all data in git
+	7) git commit -m "message"	// for remark
+	8) git push origin "name of branch"	// push data on git
+	9) git clone "repo path"   	// for clone 
+Note: after the clone "npm install"
+	-------------------------
+	git add --all
+	git commit -m "msg"
+	git pull origin master
+------------------------------------------------
+14) types of import / export
+	1) name import/ export {}
+	2) default imort/ export
+Note: file name and function name must have start from capital letter.
+Note: use return type function 
+	3) real dom vs virtual dom
+Note: one default function in single file
+15) file types
+	1) .js
+	2) .jsx
+	3) .ts
+	4) .tsx
+
+	
+
+
+	
+
+
+
+	
+	
+	 
+	
+	
+
+
+	
+	
+	
+
+
+
+
+	
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
