@@ -247,6 +247,34 @@ Note: one default function in single file
 	2) .jsx
 	3) .ts
 	4) .tsx
+-----------------------------------------------------
+16) Ui-component
+	1) html css (custom)
+	2) bootstrap(5)
+	3) react-bootstrap
+	4) ui-metrial
+17) types of component
+	1) function 
+	2) class
+18) {} expression 
+Note: replace class to className
+Note: replace a    to   Link
+Note: replace href   to   to
+
+19) element wrap
+	1) html element(div,section,header...)
+	2) <></> 
+	3) Fragment
+20) inline css
+21) bootstrap
+	npm install bootstrap		// install latest version
+	npm uninstall bootstrap		// uninstall bootstrap
+	npm install bootstrap@4.0.0	// install particular version
+
+	
+
+
+
 
 	
 
