@@ -1,8 +1,18 @@
 import React from 'react'
 
 function Mybootstrappage() {
+    const abc = (ab)=>{
+        console.log(ab);
+    }
+
     return (
-        <div className='container-fluid border shadow '>
+        <div className='container-fluid border shadow'>
+            <div className='row'>
+                <div className='col-12'>
+                    <input type='text' onClick={abc}/>
+                </div>
+            </div>
+
             <div className='row'>
                 <div className='col-12'>
                     <nav className="navbar navbar-expand-lg bg-body-tertiary">
