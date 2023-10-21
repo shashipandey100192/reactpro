@@ -270,6 +270,17 @@ Note: replace href   to   to
 	npm install bootstrap		// install latest version
 	npm uninstall bootstrap		// uninstall bootstrap
 	npm install bootstrap@4.0.0	// install particular version
+------------------------------------------------------------
+22) react routing
+	1) npm install react-router-dom
+	2) import 
+		BrowserRouter
+		Route
+		Routes
+		Link
+		Outlet		// modules routing
+23) error page
+
 
 	
 
