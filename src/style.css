@@ -61,3 +61,8 @@
     overflow-y: auto;
   }
   
+  .cus-err
+  {
+    font-size: 100px;
+    color:red;
+  }

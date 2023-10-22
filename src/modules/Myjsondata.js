@@ -1,0 +1,47 @@
+export const Myjsondata = [
+{
+    sno:1,
+    name:'khan',
+    phone:'8787557848',
+    email:'khan@gmail.com',
+    gender:'male',
+    working:false,
+    age:22
+},
+{
+    sno:2,
+    name:'khan',
+    phone:'8787557848',
+    email:'khan@gmail.com',
+    gender:'male',
+    working:true,
+    age:22
+},
+{
+    sno:3,
+    name:'khan',
+    phone:'8787557848',
+    email:'khan@gmail.com',
+    gender:'male',
+    working:true,
+    age:22
+},
+{
+    sno:4,
+    name:'mohan',
+    phone:'99999999999',
+    email:'mohan@gmail.com',
+    gender:'male',
+    working:true,
+    age:40
+},
+{
+    sno:5,
+    name:'pooja',
+    phone:'88888888',
+    email:'pooja@gmail.com',
+    gender:'female',
+    working:true,
+    age:30
+}
+];

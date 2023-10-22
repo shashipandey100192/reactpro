@@ -234,6 +234,7 @@ Note: after the clone "npm install"
 	git add --all
 	git commit -m "msg"
 	git pull origin master
+	
 ------------------------------------------------
 14) types of import / export
 	1) name import/ export {}
@@ -280,6 +281,29 @@ Note: replace href   to   to
 		Link
 		Outlet		// modules routing
 23) error page
+--------------------------------------------------------------
+24) data binding
+	map()
+	? operator
+Note: == replace to ===
+25) types of page
+	1) blank page
+		login
+		logout
+		error page
+		forget  page
+	2) full page
+		home
+		landing
+26) icons
+	1) npm install react-icons --save
+	2) import 
+27) image use
+	1) src folder
+	2) public folder
+	3) cdn(online)
+Note: alt attribute must have in image
+
 
 
 	
