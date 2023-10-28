@@ -303,6 +303,8 @@ Note: == replace to ===
 	2) public folder
 	3) cdn(online)
 Note: alt attribute must have in image
+----------------------------------------------
+28) state 
 
 
 
