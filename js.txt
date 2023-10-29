@@ -304,7 +304,35 @@ Note: == replace to ===
 	3) cdn(online)
 Note: alt attribute must have in image
 ----------------------------------------------
-28) state 
+28) useState()
+29) lifecial methods 
+30) form validation
+	1) react-hook-form (lab)
+		1) npm install react-hook-form
+		2) import 
+	2) custom
+-----------------------------------------------
+31) useEffect()
+32) api bing
+	1) axios (lab)
+	2) fetch()
+33) http statu code
+	Informational responses (100 – 199)
+	Successful responses (200 – 299)
+	Redirection messages (300 – 399)
+	Client error responses (400 – 499)
+	Server error responses (500 – 599)
+34) http methods list
+	GET()
+	PUT()
+	POST()
+	DELETE()
+	PATCH()
+	HEAD()
+	OPTIONS()
+	TRACE()
+
+
 
 
 
