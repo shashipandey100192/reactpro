@@ -315,6 +315,8 @@ Note: alt attribute must have in image
 31) useEffect()
 32) api bing
 	1) axios (lab)
+		1) npm install axios
+		2) import 
 	2) fetch()
 33) http statu code
 	Informational responses (100 – 199)
@@ -331,6 +333,7 @@ Note: alt attribute must have in image
 	HEAD()
 	OPTIONS()
 	TRACE()
+----------------------------------------------------
 
 
 

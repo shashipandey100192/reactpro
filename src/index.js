@@ -13,6 +13,7 @@ import Myservice from './modules/Myservice';
 import Myerrorpage from './modules/shares/Myerrorpage';
 import NewLeptop from './modules/services/NewLeptop';
 import Repairleptop from './modules/services/Repairleptop';
+import Myproductdetails from './modules/services/Myproductdetails';
 
 
 
@@ -29,6 +30,7 @@ root.render(
           <Route path='forms' element={<Myform/>}></Route>
           <Route path='myservice' element={<Myservice/>}>
                 <Route path='newleptop' element={<NewLeptop/>}/>
+                <Route path='newleptop/details/:id' element={<Myproductdetails/>}/>
                 <Route path='repair' element={<Repairleptop/>}/>
                 <Route path='*' element={<Myerrorpage/>}/>
           </Route>

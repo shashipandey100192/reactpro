@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function NewLeptop() {
   const [mydata,mydatafunc]=useState([])
@@ -28,6 +29,7 @@ function NewLeptop() {
         <h4>{d.brand}</h4>
         <h4>{d.category}</h4>
         <img src={d.images[0]} width={200}/>
+        <Link to={"details/"+d.id} className='btn btn-primary btn-sm'>view Details</Link>
       </div>
       </div>
 
