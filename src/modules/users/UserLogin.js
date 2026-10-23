@@ -1,6 +1,23 @@
 import React from 'react'
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 function UserLogin() {
+
+  const xyz = useNavigate();
+
+const {register,handleSubmit,formState: { errors }} = useForm()
+
+const myform = (p)=>{
+  console.log(p);
+  xyz("/landing");
+}
+
+
+
+
+
+
   return (
 
     <div className="container-fluid min-vh-100 d-flex align-items-center justify-content-center bg-light">
@@ -30,7 +47,7 @@ function UserLogin() {
               Please enter your account details
             </p>
 
-            <form>
+            <form onSubmit={handleSubmit(myform)}>
               <div className="mb-4">
                 <label className="form-label fw-semibold">
                   Email Address
@@ -38,8 +55,11 @@ function UserLogin() {
                 <input
                   type="email"
                   className="form-control form-control-lg rounded-3"
-                  placeholder="name@example.com"
+                  placeholder="enter email"
+                  name='email'
+                  {...register("email",{required:true})}
                 />
+                {errors.email && <p className='text-danger'>enter email id</p>}
               </div>
 
               <div className="mb-3">
@@ -50,7 +70,11 @@ function UserLogin() {
                   type="password"
                   className="form-control form-control-lg rounded-3"
                   placeholder="Enter your password"
+                  {...register("pass",{required:true,minLength:5,maxLength:10})}
                 />
+                {errors.pass?.type==='required' && <p className='text-danger'>password is required</p>} 
+                {errors.pass?.type==='minLength' && <p className='text-info'>min 5 charector required</p>} 
+              {errors.pass?.type==='maxLength' && <p className='text-danger'>max 10 charectors</p>} 
               </div>
 
               <div className="d-flex justify-content-between align-items-center mb-4">
@@ -70,7 +94,7 @@ function UserLogin() {
                 </a>
               </div>
 
-              <button type="button"
+              <button type="submit"
                 className="btn btn-primary btn-lg w-100 rounded-3 fw-semibold">
                 Login
               </button>
