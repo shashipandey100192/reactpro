@@ -11,6 +11,7 @@ import UserRegistor from './modules/users/UserRegistor';
 import Landingpage from './modules/users/userdashboard/Landingpage';
 import Mainpage from './modules/users/userdashboard/Mainpage';
 import Errorpage from './modules/shares/Errorpage';
+import Servicepage from './modules/dashboard/Servicepage';
 
 
 
@@ -25,6 +26,7 @@ root.render(
         <Route path='register' element={<UserRegistor/>}></Route>
         <Route path='landing' element={<Landingpage/>}>
           <Route path='' element={<Mainpage/>}></Route>
+          <Route path='service' element={<Servicepage/>}/>
           <Route path='*' element={<Errorpage/>}></Route>
         
         </Route>
