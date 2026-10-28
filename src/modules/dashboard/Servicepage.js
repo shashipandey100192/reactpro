@@ -1,5 +1,6 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Servicepage() {
 
@@ -43,7 +44,7 @@ function Servicepage() {
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                             <h3>{c.price} <del className='text-secondary'> mrp:{parseInt(c.price*30/100+ c.price)}</del></h3>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <Link to={"details/"+c.id} class="btn btn-outline-primary">more</Link>
                         </div>
                     </div>
                 </div>

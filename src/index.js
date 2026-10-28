@@ -12,6 +12,7 @@ import Landingpage from './modules/users/userdashboard/Landingpage';
 import Mainpage from './modules/users/userdashboard/Mainpage';
 import Errorpage from './modules/shares/Errorpage';
 import Servicepage from './modules/dashboard/Servicepage';
+import Productdetails from './modules/dashboard/Productdetails';
 
 
 
@@ -27,6 +28,9 @@ root.render(
         <Route path='landing' element={<Landingpage/>}>
           <Route path='' element={<Mainpage/>}></Route>
           <Route path='service' element={<Servicepage/>}/>
+          <Route path='service/details/:id' element={<Productdetails/>}/>
+
+
           <Route path='*' element={<Errorpage/>}></Route>
         
         </Route>
