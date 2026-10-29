@@ -1,17 +1,21 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 
 function UserLogin() {
 
   const xyz = useNavigate();
 
-const {register,handleSubmit,formState: { errors }} = useForm()
+  const { register, handleSubmit, formState: { errors } } = useForm()
 
-const myform = (p)=>{
-  console.log(p);
-  xyz("/landing");
-}
+  const myform = (p) => {
+    console.log(p);
+    toast.success("welcome to dashboard",{theme:"dark",autoClose:1000,position:"top-left"});
+    setTimeout(()=>{
+      xyz("/landing");
+    },1200)
+    }
 
 
 
@@ -24,7 +28,7 @@ const myform = (p)=>{
 
       <div className="card border-0 shadow-lg rounded-4 overflow-hidden"
         style={{ maxWidth: "900px", width: "100%" }}>
-
+        <ToastContainer />
         <div className="row g-0">
 
           {/* Left Design Section */}
@@ -57,7 +61,7 @@ const myform = (p)=>{
                   className="form-control form-control-lg rounded-3"
                   placeholder="enter email"
                   name='email'
-                  {...register("email",{required:true})}
+                  {...register("email", { required: true })}
                 />
                 {errors.email && <p className='text-danger'>enter email id</p>}
               </div>
@@ -70,11 +74,11 @@ const myform = (p)=>{
                   type="password"
                   className="form-control form-control-lg rounded-3"
                   placeholder="Enter your password"
-                  {...register("pass",{required:true,minLength:5,maxLength:10})}
+                  {...register("pass", { required: true, minLength: 5, maxLength: 10 })}
                 />
-                {errors.pass?.type==='required' && <p className='text-danger'>password is required</p>} 
-                {errors.pass?.type==='minLength' && <p className='text-info'>min 5 charector required</p>} 
-              {errors.pass?.type==='maxLength' && <p className='text-danger'>max 10 charectors</p>} 
+                {errors.pass?.type === 'required' && <p className='text-danger'>password is required</p>}
+                {errors.pass?.type === 'minLength' && <p className='text-info'>min 5 charector required</p>}
+                {errors.pass?.type === 'maxLength' && <p className='text-danger'>max 10 charectors</p>}
               </div>
 
               <div className="d-flex justify-content-between align-items-center mb-4">

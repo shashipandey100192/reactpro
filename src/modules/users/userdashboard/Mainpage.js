@@ -1,4 +1,5 @@
 import React from 'react'
+import Graphpage from '../Graphpage'
 
 function Mainpage() {
     return (
@@ -47,10 +48,10 @@ function Mainpage() {
                             </div>
                         </div>
                         <div className='col-md-12'>
-                            <div class="card text-bg-danger mb-3 shadow">
+                            <div class="card text-bg-dark mb-3 shadow">
                                 <div class="card-body">
                                     <h5 class="card-title">Primary card title</h5>
-                                    <p class="card-text">Scard’s content.</p>
+                                        <Graphpage/>
                                 </div>
                             </div>
                         </div>
