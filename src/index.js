@@ -14,6 +14,7 @@ import Errorpage from './modules/shares/Errorpage';
 import Servicepage from './modules/dashboard/Servicepage';
 import Productdetails from './modules/dashboard/Productdetails';
 import Graphpage from './modules/users/Graphpage';
+import Mainbranch from './modules/dashboard/branchs/Mainbranch';
 
 
 
@@ -31,6 +32,7 @@ root.render(
           <Route path='service' element={<Servicepage/>}/>
           <Route path='service/details/:id' element={<Productdetails/>}/>   
           <Route path='graph' element={<Graphpage/>}/>
+          <Route path='props' element={<Mainbranch/>}></Route>
 
 
           <Route path='*' element={<Errorpage/>}></Route>
