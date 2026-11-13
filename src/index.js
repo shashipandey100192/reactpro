@@ -15,6 +15,7 @@ import Servicepage from './modules/dashboard/Servicepage';
 import Productdetails from './modules/dashboard/Productdetails';
 import Graphpage from './modules/users/Graphpage';
 import Mainbranch from './modules/dashboard/branchs/Mainbranch';
+import Adminlandingpage from './modules/admin/admindashboard/Adminlandingpage';
 
 
 
@@ -28,16 +29,15 @@ root.render(
         <Route path='admin' element={<AdminLogin/>}></Route>
         <Route path='register' element={<UserRegistor/>}></Route>
         <Route path='landing' element={<Landingpage/>}>
-          <Route path='' element={<Mainpage/>}></Route>
-          <Route path='service' element={<Servicepage/>}/>
-          <Route path='service/details/:id' element={<Productdetails/>}/>   
-          <Route path='graph' element={<Graphpage/>}/>
-          <Route path='props' element={<Mainbranch/>}></Route>
-
-
-          <Route path='*' element={<Errorpage/>}></Route>
-        
+              <Route path='' element={<Mainpage/>}></Route>
+              <Route path='service' element={<Servicepage/>}/>
+              <Route path='service/details/:id' element={<Productdetails/>}/>   
+              <Route path='graph' element={<Graphpage/>}/>
+              <Route path='props' element={<Mainbranch/>}></Route>
+              <Route path='*' element={<Errorpage/>}></Route>
         </Route>
+        <Route path='admindashboard' element={<Adminlandingpage/>}/>
+
          <Route path='*' element={<Errorpage/>}></Route>
       </Routes>
     </BrowserRouter>

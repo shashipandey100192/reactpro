@@ -1,11 +1,18 @@
 import React from 'react'
 
 function Noida(props) {
-  return (
+
+const emp = "ram kumar varma pppppp";
+
+localStorage.setItem("mylocaldata",emp);
+
+
+    return (
      <div className='container-fluid bg-dark text-white'>
         <div className='row'>
             <div className='col-12 p-5'>
                 <h4>Noida </h4>
+                {emp}
                 <select>
                     {props.dis.map((d)=>{
                         return(

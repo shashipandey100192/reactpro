@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.21.0",
     "bootstrap": "^5.3.8",
+    "json-server": "^1.0.0-beta.15",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "react-hook-form": "^7.90.0",
