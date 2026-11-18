@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { MdDelete } from "react-icons/md";
 import { MdEditSquare } from "react-icons/md";
 import { FaListOl } from "react-icons/fa";
+import { toast,ToastContainer } from 'react-toastify';
 
 
 function Adminlandingpage() {
@@ -20,6 +21,15 @@ function Adminlandingpage() {
     }, [])
 
 
+const deletepro = (myid)=>{
+    console.log(myid)
+    axios.delete(`http://localhost:8700/admin/${myid}`).then((r)=>{
+        toast.success("user deleted successfully",{autoClose:2000,position:"top-left",theme:'dark'});
+        getadmin();
+    })
+}
+
+
     return (
         <div className='container-fluid mt-3'>
             <div className='row'>
@@ -30,6 +40,7 @@ function Adminlandingpage() {
                                 <div class="card-body">
                                     <h5 class="card-title">Total Admins</h5>
                                     <p class="card-text h1">{admin.length}</p>
+                                    <ToastContainer/>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +105,7 @@ function Adminlandingpage() {
                                                         <td>{d.gender}</td>
                                                         <td>{d.comments}</td>
                                                         <td>
-                                                            <button className='btn btn-sm btn-danger'><MdDelete /></button>
+                                                            <button className='btn btn-sm btn-danger' onClick={()=>deletepro(d.id)}><MdDelete /></button>
                                                             <button className='btn btn-sm btn-warning ms-2'><MdEditSquare /></button>
                                                         </td>
                                                     </tr>

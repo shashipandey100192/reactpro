@@ -4,58 +4,13 @@
   "products": [],
   "admin": [
     {
-      "username": "dddd",
-      "email": "shashiweb64@gmail.com",
-      "pass": "POIKJ",
-      "phone": "987456321",
+      "username": "eeeeeeeeee",
+      "email": "eeeeee@gmail.com",
+      "pass": "123546",
+      "phone": "6666666",
       "gender": "male",
-      "comments": "sdfsdf",
-      "id": "gqoiwpvs5mI"
-    },
-    {
-      "username": "dddd",
-      "email": "shashiweb64@gmail.com",
-      "pass": "POIKJ",
-      "phone": "987456321",
-      "gender": "male",
-      "comments": "sdfsdf",
-      "id": "499fy6um5Y8"
-    },
-    {
-      "username": "dddd",
-      "email": "shashiweb64@gmail.com",
-      "pass": "POIKJ",
-      "phone": "987456321",
-      "gender": "male",
-      "comments": "sdfsdf",
-      "id": "s0WqKsQrO2k"
-    },
-    {
-      "username": "ravi",
-      "email": "shashiweb64@gmail.com",
-      "pass": "OIKJUY",
-      "phone": "123456",
-      "gender": "female",
-      "comments": "sdfsfsdf",
-      "id": "4R_Yuool59o"
-    },
-    {
-      "username": "kumar",
-      "email": "shashiweb64@gmail.com",
-      "pass": "9876543",
-      "phone": "123456",
-      "gender": "female",
-      "comments": "sdfsdf",
-      "id": "SgXeDSwMkas"
-    },
-    {
-      "username": "rohit",
-      "email": "rohit@gmail.com",
-      "pass": "1234",
-      "phone": "8751458451541",
-      "gender": "male",
-      "comments": "hellow rohit",
-      "id": "jYo646alTeE"
+      "comments": "sdfsdfsd",
+      "id": "wx5Oi4vMLs0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
