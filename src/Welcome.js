@@ -1,7 +1,14 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { increment } from './redux/Actionslist';
+import { useDispatch } from 'react-redux';
+
 
 function Welcome() {
+
+    const esalary = useSelector((state)=>state.counter.salary);
+    const mydis = useDispatch();
     return (
         <Fragment>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,6 +36,16 @@ function Welcome() {
                     </div>
                 </div>
             </nav>
+
+            <div className='border p-2'>
+
+            <h1>{esalary}</h1>
+
+            <input type='button' value="change salary" onClick={()=>mydis(increment())}/>
+
+            </div>
+
+
 
         </Fragment>
     )

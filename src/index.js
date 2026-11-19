@@ -16,12 +16,15 @@ import Productdetails from './modules/dashboard/Productdetails';
 import Graphpage from './modules/users/Graphpage';
 import Mainbranch from './modules/dashboard/branchs/Mainbranch';
 import Adminlandingpage from './modules/admin/admindashboard/Adminlandingpage';
+import { Provider } from 'react-redux';
+import { Myactionstore } from './redux/Mystore';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={Myactionstore}>
     <BrowserRouter>
       <Routes>
         <Route path='' element={<Welcome/>}></Route>
@@ -41,7 +44,7 @@ root.render(
          <Route path='*' element={<Errorpage/>}></Route>
       </Routes>
     </BrowserRouter>
-  
+  </Provider>
   </React.StrictMode>
 );
 

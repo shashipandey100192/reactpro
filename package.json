@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^2.15.0",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.3",
@@ -14,6 +15,7 @@
     "react-dom": "^19.3.0",
     "react-hook-form": "^7.90.0",
     "react-icons": "^5.7.0",
+    "react-redux": "^9.3.1",
     "react-router-dom": "^7.18.4",
     "react-scripts": "5.0.1",
     "react-toastify": "^11.2.0",
@@ -26,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "xyz": "react-scripts start",
-    "server":"npx json-server --watch mydatabase.json --port 8700"
+    "server": "npx json-server --watch mydatabase.json --port 8700"
   },
   "eslintConfig": {
     "extends": [

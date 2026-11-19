@@ -2,10 +2,12 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
+import { useSelector } from 'react-redux';
 
 function UserLogin() {
 
   const xyz = useNavigate();
+  const abc = useSelector((state)=>state.counter.salary);
 
   const { register, handleSubmit, formState: { errors } } = useForm()
 
@@ -33,9 +35,10 @@ function UserLogin() {
 
           {/* Left Design Section */}
           <div className="col-md-6 bg-primary text-white d-flex flex-column justify-content-center p-5">
-            <h1 className="fw-bold mb-3">Welcome Back!</h1>
+            <h1 className="fw-bold mb-3">Welcome Back! </h1>
             <p className="fs-5">
               Sign in to continue your journey with us.
+              {abc}
             </p>
             <div className="mt-4">
               <span className="badge bg-white text-primary p-2">
